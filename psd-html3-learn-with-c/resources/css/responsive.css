@@ -1,0 +1,119 @@
+@media (max-width: 1024px){
+    html{
+        font-size: 9px;
+    }
+
+    #contact form{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 8.5px;
+    }
+
+    /* SLIDER */
+    .bx-wrapper .bx-pager {
+        position: absolute;
+        bottom: 2.5rem;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a {
+        width: 2rem;
+        height: 2rem;
+        border: .4rem solid #97455f;
+    }
+
+    /* ABOUT SECTION */
+    #about .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #about .container .about-text{
+        margin-top: 2rem;
+        text-align: center;
+        width: 80%;
+        padding-right: 0;
+        order: 2;
+    }
+
+    #about .container .about-photo{
+        width: auto;
+    }
+
+    #about .span_1_of_2 a{
+        margin-left: auto ;
+        margin-right: auto;
+    }
+
+    /* SERVICE SECTION */
+    #service .span_1_of_3{
+        width: 50%;
+    }
+
+    /* CONTACT SECTION */
+    #contact form{
+        width: 90%;
+    }
+
+    #contact input[type="text"],
+    #contact textarea{
+        width: 100%;
+    }
+
+    #contact form > *{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px){
+
+    /* HEADER SECTION */
+    .top-header .container{
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .search-website form{
+        margin-top: 1rem;
+    }
+
+    .main-header .container{
+        justify-content: space-between;
+    }
+
+    /* SLIDER */
+    .bx-wrapper .bx-pager.bx-default-pager a {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: .3rem solid #97455f;
+    }
+
+    .bx-viewport,
+    .slider,
+    .slider-img,
+    .slider-img img {
+        height: 30rem;
+        object-fit: cover;
+    }
+
+    /* ABOUT SECTION */
+    #about .container .about-text {
+        width: 90%;
+    }
+
+    #service .span_1_of_3{
+        width: 100%;
+        padding: 3rem 6rem;
+    }
+
+    /* CONTACT SECTION */
+    #contact form{
+        width: 100%;
+    }
+}
