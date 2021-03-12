@@ -1,0 +1,366 @@
+:root{
+	--p-primary-color: #234;
+}
+
+:root.dark{
+	/*--p-primary-color: #d6d6d6e0;*/
+	--p-primary-color: #dcdcd9;
+}
+
+html{
+	font-size: 58.5%;
+}
+
+body{
+	font-family: 'Inter';
+	color: black;
+}
+
+:root.dark body{
+	color: var(--p-primary-color);
+	background: #141414;
+}
+
+@media (min-width: 576px){
+	html{
+		font-size: 59.5%;
+	}
+}
+@media (min-width: 768px){
+	html{
+		font-size: 60.5%;
+	}
+}
+@media (min-width: 992px){
+	html{
+		font-size: 61.5%;
+	}
+}
+
+/*===========================================
+	NAVBAR CSS
+===========================================*/
+
+.navbar, .navbar-list, .mobile-navbar{
+	display: -ms-flexbox;
+  	display: flex;
+}
+
+.navbar{
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.mobile-navbar{
+	align-items: center;
+}
+
+.navbar-brand{
+	padding: 5px 0;
+	margin-right: 16px;
+}
+
+.navbar-toggler{
+	padding: 4px 12px;
+	font-size: 20px;
+	line-height: 1;
+	border-radius: 4px;
+	background-color: transparent;
+	border: 1px solid transparent;
+	cursor: pointer;
+	background: rgba(0,0,0,.5);
+}
+
+.navbar-list {
+	-ms-flex-direction: column;
+	flex-direction: column;
+	list-style: none;
+	transition: all 1s ease-out;
+	position: relative;
+	padding: 0;
+}
+
+.navbar-list .nav-link {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: rgba(255, 255, 255, 0.5);
+	display: block;
+	text-align: center;
+}
+
+@media (max-width: 991px){
+	.navbar-collapse{
+		flex-basis: 100%;
+		flex-grow: 1;
+		align-items: center;
+	}
+
+	.mobile-navbar{
+		padding: 0.5rem 1rem;
+		justify-content: space-between;
+		flex-grow: 1;
+		position: relative;
+		z-index: 100;
+	}
+
+	.collapse:not(.show) .navbar-list {
+		margin-top: -100%;
+	}
+}
+
+@media (min-width: 992px){
+	.navbar {
+	    padding-top: 0;
+	    padding-bottom: 0;
+	    padding: 0.5rem 1rem;
+	}
+
+	.navbar-toggler{
+		display: none;
+	}
+
+	.navbar-list {
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	    margin-left: auto;
+	    transition: none; /* [modification] */
+	}
+
+	.navbar-list .nav-link {
+	    padding-right: 8px;
+	    padding-left: 8px;
+	}
+
+	.navbar-collapse{
+		display: flex;
+		flex-grow: 1;
+	}
+}
+
+.navbar-toggler-icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
+:root.light .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+:root.dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+:root.dark .navbar-toggler {
+     /*color: rgba(255, 255, 255, 0.5); */
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+:root.light .navbar-toggler {
+	/*color: rgba(0, 0, 0, 0.5);*/
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/*===========================================
+	Custom CSS
+===========================================*/
+
+.navbar{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.navbar-list .nav-link{
+	color: var(--p-primary-color);
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-weight: 500;
+}
+
+.navbar-list .nav-link:hover{
+	filter: none;
+}
+
+.navbar-brand{
+	font-size: 2rem;
+	color: var(--p-primary-color);
+}
+
+img{
+	max-width: 100%;
+}
+
+/*===========================================
+	Section-1
+===========================================*/
+
+.section-1-h1{
+	font-size: 1.7em;
+	margin-bottom: 3rem;
+}
+
+.section-1 .date{
+	margin-bottom: 2.7rem;
+}
+
+.sub-heading span{
+	display: block;
+	font-size: 1.5rem;
+}
+
+.section-1-description{
+	font-size: 2.4rem;
+	line-height: 1.65;
+}
+
+/*===========================================
+	Section-2
+===========================================*/
+
+.clone-section{
+	margin-top: 6rem;
+	margin-bottom: 5rem;
+}
+
+h2{
+	font-size: 1.4em;
+}
+
+.clone-section .description{
+	font-size: 2rem;
+}
+
+.clone-section .row{
+	justify-content: space-around;
+}
+
+.section-2 .col-md-6:last-child{
+	align-self: flex-end;
+}
+
+.clone-section img{
+	max-width: 88%;
+	margin-left: -20px;
+}
+
+.clone-section img{
+	transform: rotate3d(0, 0, 1, 25deg)
+}
+
+/*===========================================
+	Section-3
+===========================================*/
+
+.section-3{
+	background: #d3d3d340;
+}
+
+/*:root.dark .section-3{}*/
+
+h3{
+	font-size: 1.3em;
+}
+
+.section-3-description{
+	font-size: 1.8rem;
+}
+
+/*===========================================
+	Section-4
+===========================================*/
+
+.section-4 .col-md-4:first-child{
+	order: 5;
+}
+
+/*===========================================
+	Footer
+===========================================*/
+
+footer{
+	background: #192027;
+}
+
+footer span{
+	display: block;
+}
+
+footer a{
+	color: #f6f6f6e0;
+	display: inline-block;
+	font-size: 3rem;
+	margin-top: 1.5rem;
+}
+
+footer .col-sm-4 + .col-sm-4{
+	padding-top: 3rem;
+}
+
+/*===========================================
+	Theme toggler
+===========================================*/
+#theme-toggler{
+	width: 2.5rem;
+	height: 2.5rem;
+	position: fixed;
+	border-radius: 50%;
+	bottom: 2rem;
+	right: 2rem;
+	overflow: hidden;
+	border: 2px solid gray;
+}
+
+.theme-toggler-left, .theme-toggler-right{
+	width: 50%;
+	height: 100%;
+}
+
+.theme-toggler-left{
+	background: #f6f6f6;
+}
+
+.theme-toggler-right{
+	background: black;
+}
+
+/*===========================================
+	Responsive CSS
+===========================================*/
+.container{
+	overflow: hidden;
+}
+
+@media (min-width: 576px){
+
+	.clone-section img{
+		max-width: 72%;
+	}
+
+	.container{
+		overflow: initial;
+	}
+
+	footer .col-sm-4 + .col-sm-4{
+		padding-top: 0rem;
+	}
+}
+
+@media (min-width: 768px){
+	.clone-section img{
+		max-width: 100%;
+	}
+}
+
+
+:root.dark .text-black{
+	color: #ff6c6c;
+}
+
+:root.dark img{
+	filter: brightness(.95);
+}
