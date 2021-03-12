@@ -5,7 +5,6 @@ $(document).ready(function(){
         // i want to make sticky nav visible when main nav is scrolled, need to find that way
         if (direction == "down"){
             $("body").addClass("sticky");
-            console.log("hello");
         }else{
             $("body").removeClass("sticky");
         }
