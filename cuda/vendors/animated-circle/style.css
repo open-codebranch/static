@@ -1,0 +1,52 @@
+/*** RADIAL PROGRESS ***/
+/* Circumference = 2πr */
+/* π = 3.1415926535898 */
+/* r = 35 */
+
+svg.radial-progress {
+  height: auto;
+  max-width: 200px;
+  padding: 1em;
+  transform: rotate(-90deg);
+  width: 100%;
+}
+
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129; /* Circumference */
+  /* stroke-width: 7; */
+}
+
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circumference */ }
+
+svg.radial-progress text {
+  /* fill: #3C4761; */
+  /* font: 400 1em/1 'Oswald', sans-serif; */
+  text-anchor: middle;
+}
+
+/*** COLORS ***/
+/* Primary */
+
+/* svg.radial-progress:nth-of-type(6n+1) circle { stroke: #a2ed56; } */
+/* .skill-1st svg.radial-progress circle{ stroke: #30BAE7; } */
+
+/* Secondary */
+
+/* svg.radial-progress:nth-of-type(6n+2) circle { stroke: #83e4e2; } */
+/* .skill-2nd svg.radial-progress circle{ stroke: #D74680; } */
+
+/* Tertiary */
+
+/* svg.radial-progress:nth-of-type(6n+3) circle { stroke: #fd6470; } */
+/* .skill-3rd svg.radial-progress circle{ stroke: #15C7A8; } */
+
+/* Quaternary */
+
+/* svg.radial-progress:nth-of-type(6n+4) circle { stroke: #fca858; } */
+/* .skill-4th svg.radial-progress circle{ stroke: #EB7D4B; } */
+
+/* Quinary */
